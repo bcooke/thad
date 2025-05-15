@@ -1,0 +1,25 @@
+# Thad Configuration
+# Copy this file to ~/.config/thad/config.yaml and modify as needed
+
+# Model configuration
+model:
+  # Choose one of: openai, ollama
+  provider: ollama
+
+  # OpenAI configuration (if provider is "openai")
+  api_key: ENV:OPENAI_API_KEY  # Use environment variable
+  openai_model: gpt-4-turbo-preview   # Optional, defaults to gpt-4-turbo-preview
+
+  # Ollama configuration (if provider is "ollama")
+  base_url: http://localhost:11434  # Optional, defaults to http://localhost:11434
+  ollama_model: codellama           # Optional, defaults to codellama
+
+# System prompt that guides the model's responses
+prompt_preamble: |
+  You are an expert shell assistant. Return the shortest working
+  command for the user's OS unless they ask for alternatives.
+
+shell: zsh  # Supported: bash, zsh, (fish, PowerShell in future)
+srs:
+  algorithm: sm2
+  db_path: ~/.local/share/thad/flashcards.db 
