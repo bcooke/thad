@@ -1,4 +1,4 @@
-# Thad – Terminal Helper and Driller
+# Thad
 
 > Turn plain-English requests into safe shell commands **and** help you memorize them with built-in spaced-repetition—all from one tiny CLI.
 
@@ -6,7 +6,7 @@
 
 ## What is Thad?
 
-**Thad** is a CLI tool that:
+**Thad** (**T**erminal **H**elper **A**nd **D**riller) is a CLI tool that:
 - Converts natural language into safe, ready-to-run shell commands using local or cloud LLMs
 - Lets you save commands as flashcards and drill them with spaced repetition
 - Ships as a single static Go binary—no external runtime dependencies
